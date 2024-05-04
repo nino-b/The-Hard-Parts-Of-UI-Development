@@ -29,3 +29,29 @@
 ```jsInput.value ```
 - <b>Setter example:</b> '.textContent' is setter:
 ```jsDiv.textContent ```
+
+
+
+### Example
+
+```html
+<input>
+<div></div>
+<script src="app.js"></script>
+```
+
+```js
+let post = "";
+const jsInput = document.querySelector('input');
+const jsDiv = document.querySelector('div');
+
+function handleInput() {
+    post = jsInput.value; //getter
+    jsdev.textContent = post; //setter
+}
+jsInput.oninput = handleInput;
+```
+
+![](/img/1-01.png)
+![](/img/1-02.png)
+![](/img/1-03.png)
